@@ -7,19 +7,20 @@
 	'use strict';
 
 	var module = angular.module('ngPdfObject', []);
-	
-	module.provider('ngPdfObject', function () {
-	});
 
-	module.directive('ngPdfObject', ['ngPdfObject', function (ngDialog) {
+	module.directive('ngPdfObject', function () {
 		return {
-			restrict: 'A',
+			replace: 'true',
+			scope:{
+				src : "@src",
+				height: "@height",
+				width: "@width"
+			},
+			template: '<div id="pdf"><div>',			
 			link: function (scope, elem, attrs) {
-				elem.on('click', function (e) {
-					e.preventDefault();
-					
-				});
+				
+				var success = new PDFObject({ url: scope.src, width:scope.height, height:scope.height }).embed("pdf");				
 			}
 		};
-	}]);
+	});
 })(window, window.angular);

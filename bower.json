@@ -25,6 +25,6 @@
   ],
   "dependencies": {
     "angular": "1.2.0",
-    "PDFObject": "https://github.com/bikash1999/PDFObject"
+    "pdfobject": "~1.2.0"
   }
 }

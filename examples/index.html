@@ -6,16 +6,17 @@
 <body ng-controller="MainCtrl">
 
 	<a href="#" ng-click="open()">Open via service</a>
-
+	<div ng-pdf-object src="file:///D:/git/ngPdfObject/examples/pdf/sample.pdf" width="500px"></div>
 	
 	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/pdfobject/pdfobject.min.js"></script>
 	<script src="../js/ngPdfObject.js"></script>
 	<script>
 		var app = angular.module('exampleDialog', ['ngPdfObject']);
 
-		app.controller('MainCtrl', function ($scope, $rootScope) {
+		app.controller('MainCtrl', function ($scope) {
 			$scope.open = function () {
-				
+				console.log('hello');
 			};
 		});
 
