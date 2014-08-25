@@ -1,0 +1,24 @@
+<html ng-app="exampleDialog">
+<head>
+	<meta charset="utf-8">
+	<title>ngPdfObject demo</title>
+</head>
+<body ng-controller="MainCtrl">
+
+	<a href="#" ng-click="open()">Open via service</a>
+
+	
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../js/ngPdfObject.js"></script>
+	<script>
+		var app = angular.module('exampleDialog', ['ngPdfObject']);
+
+		app.controller('MainCtrl', function ($scope, $rootScope) {
+			$scope.open = function () {
+				
+			};
+		});
+
+	</script>
+</body>
+</html>

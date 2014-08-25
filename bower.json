@@ -1,0 +1,30 @@
+{
+  "name": "ngPdfObject",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bikash1999/ngPdfObject",
+  "authors": [
+    "Bikash Kumar Sharma <bikash1999@yahoo.com>"
+  ],
+  "description": "directive to embed pdf in angular pdf",
+  "main": "dist/main.js",
+  "keywords": [
+    "angularjs",
+    "angular",
+    "directive",
+    "pdf",
+    "pdfviewer",
+    "embedpdf"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.0",
+    "PDFObject": "https://github.com/bikash1999/PDFObject"
+  }
+}
