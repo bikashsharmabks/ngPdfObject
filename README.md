@@ -11,7 +11,7 @@ Angular directive for PDF Object to embed pdf in angular page
 * height (optional) = can be in percentage like 100% or pixel like 500px
 
 ## Dependencies
-required: x2js.js
+required: pdfobject.min.js
 
 Includes this lines in your index.html
 ```html
