@@ -13,7 +13,7 @@ Angular directive for PDF Object to embed pdf in angular page
 ## Dependencies
 required: pdfobject.min.js
 
-Include this lines in your index.html
+Include these lines in your index.html
 ```html
 <script src="bower_components/pdfobject/pdfobject.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
