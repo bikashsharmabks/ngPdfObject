@@ -19,7 +19,7 @@
 			template: '<div id="pdf"><div>',			
 			link: function (scope, elem, attrs) {
 				
-				var success = new PDFObject({ url: scope.url, width:scope.height, height:scope.height }).embed("pdf");				
+				var success = new PDFObject({ url: scope.url, width:scope.width, height:scope.height }).embed("pdf");				
 			}
 		};
 	});
